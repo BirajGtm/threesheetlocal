@@ -22,7 +22,7 @@ export default function Posters() {
   const rightColumn = [posterItems[1], posterItems[3]]
 
   return (
-    <section ref={containerRef} className="min-h-screen bg-[#111] text-white py-24 relative overflow-hidden">
+    <section id="vault" ref={containerRef} className="min-h-screen bg-[#111] text-white py-24 relative overflow-hidden">
       
       {/* Background Noise Texture for "Gritty" feel */}
       <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>

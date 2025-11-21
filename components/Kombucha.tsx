@@ -14,7 +14,7 @@ export default function Kombucha() {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-90%"])
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-primary text-paper">
+    <section id="kombucha" ref={targetRef} className="relative h-[300vh] bg-primary text-paper">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         
         <motion.div style={{ x }} className="flex gap-20 pl-10 md:pl-20 items-center">

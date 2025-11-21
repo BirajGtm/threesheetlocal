@@ -6,7 +6,7 @@ import { beerData } from '@/data/beer'
 
 export default function Beer() {
   return (
-    <section className="relative bg-paper">
+    <section id="beer" className="relative bg-paper">
       
       {/* PART 1: The Main Ad (Intro) */}
       <div className="h-screen flex items-center justify-center p-4 md:p-20 bg-white relative z-10">
@@ -50,6 +50,7 @@ function SeasonCard({ season, index }: { season: typeof beerData.seasons[0], ind
   }
 
   return (
+    
     <div className="sticky top-0 h-screen flex flex-col md:flex-row overflow-hidden">
       
       {/* LEFT SIDE: Background Color & Text */}

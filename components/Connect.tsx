@@ -15,7 +15,7 @@ export default function Connect() {
   }
 
   return (
-    <footer className="relative bg-[#1B4332] text-[#F8F9FA] pt-20 overflow-hidden">
+    <footer id="contact"  className="relative bg-[#1B4332] text-[#F8F9FA] pt-20 overflow-hidden">
       
       {/* Main Content Grid */}
       <div className="container mx-auto px-6 md:px-20 mb-20">

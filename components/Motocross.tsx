@@ -9,7 +9,7 @@ export default function Motocross() {
   const [activeBg, setActiveBg] = useState(0)
 
   return (
-    <section className="min-h-screen bg-zinc-900 text-white py-20 px-4 md:px-10 overflow-hidden relative">
+    <section id='moto' className="min-h-screen bg-zinc-900 text-white py-20 px-4 md:px-10 overflow-hidden relative">
       
       {/* Decorative "Racing Strip" Background */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-900/20 to-transparent -skew-x-12 pointer-events-none" />
