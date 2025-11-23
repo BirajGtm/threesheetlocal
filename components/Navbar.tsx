@@ -12,23 +12,15 @@ export default function Navbar() {
   ]
 
   return (
-<<<<<<< HEAD
-    <motion.nav 
-=======
     <motion.nav
->>>>>>> 1c0954b (Refine Hero visuals, Navbar, and fix dependencies)
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ delay: 2.5, duration: 1 }} // Waits for loader to finish
       className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-6 pointer-events-none"
     >
       {/* Left: Logo Text */}
-<<<<<<< HEAD
-      <div className="font-display font-bold text-xl tracking-tighter text-primary pointer-events-auto bg-paper/80 backdrop-blur-md px-4 py-2 rounded-sm">
-=======
       <div className="font-display font-bold text-xl tracking-tighter text-primary pointer-events-auto bg-paper/80 backdrop-blur-md px-4 py-2 rounded-sm flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
         <img src="/assets/Logo/ThreeSheetLocal Logo Final.png" alt="Logo" className="h-8 w-auto" />
->>>>>>> 1c0954b (Refine Hero visuals, Navbar, and fix dependencies)
         THREESHEET
       </div>
 
@@ -36,11 +28,7 @@ export default function Navbar() {
       <ul className="flex gap-2 pointer-events-auto bg-primary/90 backdrop-blur-md text-paper p-2 rounded-full shadow-lg">
         {links.map((link) => (
           <li key={link.target}>
-<<<<<<< HEAD
-            <button 
-=======
             <button
->>>>>>> 1c0954b (Refine Hero visuals, Navbar, and fix dependencies)
               onClick={() => {
                 document.getElementById(link.target)?.scrollIntoView({ behavior: 'smooth' })
               }}
