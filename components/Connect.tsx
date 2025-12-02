@@ -15,25 +15,25 @@ export default function Connect() {
   }
 
   return (
-    <footer id="contact"  className="relative bg-[#1B4332] text-[#F8F9FA] pt-20 overflow-hidden">
-      
+    <footer id="contact" className="relative bg-[#1B4332] text-[#F8F9FA] pt-20 overflow-hidden">
+
       {/* Main Content Grid */}
       <div className="container mx-auto px-6 md:px-20 mb-20">
         <div className="flex flex-col md:flex-row gap-16 justify-between">
-          
+
           {/* LEFT: Title & Socials */}
           <div className="md:w-1/2">
-            <motion.h2 
+            <motion.h2
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               className="font-display text-[5rem] md:text-[8rem] leading-[0.8] mb-8 text-[#95D5B2]"
             >
-              LET'S<br/>CONNECT
+              LET'S<br />CONNECT
             </motion.h2>
 
             <div className="space-y-6 text-xl">
               {/* Email Copy Interaction */}
-              <button 
+              <button
                 onClick={handleCopy}
                 className="group flex items-center gap-4 hover:text-[#E9C46A] transition-colors text-left"
               >
@@ -44,8 +44,8 @@ export default function Connect() {
               </button>
 
               {/* Instagram Link */}
-              <a 
-                href="https://instagram.com/nzjennex" 
+              <a
+                href="https://instagram.com/nzjennex"
                 target="_blank"
                 className="flex items-center gap-4 hover:text-[#E9C46A] transition-colors w-max"
               >
@@ -62,21 +62,21 @@ export default function Connect() {
             <p className="text-[#95D5B2] uppercase tracking-widest font-bold text-sm mb-2">
               Downloads
             </p>
-            
+
             {/* Resume Button */}
-            <DownloadCard 
-              title="My Resume" 
-              subtitle="PDF (2.4 MB)" 
-              icon={<FileText size={32} />} 
+            <DownloadCard
+              title="My Resume"
+              subtitle="PDF (2.4 MB)"
+              icon={<FileText size={32} />}
               href="/assets/Resume.pdf" // You will need to put the actual file here later
             />
 
             {/* One Sheet Button */}
-            <DownloadCard 
-              title="One Sheet" 
-              subtitle="PDF (1.1 MB)" 
-              icon={<FileImage size={32} />} 
-              href="/assets/OneSheet.pdf" 
+            <DownloadCard
+              title="One Sheet"
+              subtitle="PDF (1.1 MB)"
+              icon={<FileImage size={32} />}
+              href="/assets/OneSheet.pdf"
             />
           </div>
 
@@ -86,7 +86,7 @@ export default function Connect() {
       {/* Marquee Animation (Infinite Scroll) */}
       <div className="border-t border-[#95D5B2]/20 py-6 bg-[#153426]">
         <div className="overflow-hidden whitespace-nowrap flex gap-10">
-          <motion.div 
+          <motion.div
             animate={{ x: [0, -1000] }}
             transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
             className="flex gap-10 text-[#95D5B2]/40 font-display text-4xl uppercase"
@@ -111,9 +111,9 @@ export default function Connect() {
 // Sub-component for the Download Buttons
 function DownloadCard({ title, subtitle, icon, href }: any) {
   return (
-    <a 
-      href={href} 
-      download 
+    <a
+      href={href}
+      download
       className="group bg-white/5 border border-white/10 p-6 rounded-sm flex items-center justify-between hover:bg-[#E9C46A] hover:text-[#1B4332] transition-all duration-300"
     >
       <div className="flex items-center gap-4">
