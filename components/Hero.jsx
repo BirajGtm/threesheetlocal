@@ -40,7 +40,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="h-screen w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-20 overflow-hidden relative">
+    <section className="h-screen w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-20 overflow-hidden relative bg-black">
 
       {/* LEFT SIDE: Text Content */}
       <div className="flex-1 flex flex-col justify-center z-10 pt-20 md:pt-0">
@@ -98,19 +98,13 @@ export default function Hero() {
               ))}
             </span>
             <span className="block">
-              {"Name's Nathan".split("").map((char, index) => (
+              {"Name's Nathan,".split("").map((char, index) => (
                 <motion.span key={index} variants={letter}>
                   {char}
                 </motion.span>
               ))}
             </span>
-            <span className="block">
-              {"Here's some of work".split("").map((char, index) => (
-                <motion.span key={index} variants={letter}>
-                  {char}
-                </motion.span>
-              ))}
-            </span>
+
           </motion.h2>
 
 
